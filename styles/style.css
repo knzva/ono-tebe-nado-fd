@@ -87,13 +87,14 @@ address {
 
 .cover__title {
     position: relative;
+    text-transform: uppercase;
     display: block;
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 100px;
     color: #fff;
     Width: 100%;
-    padding: 165px 50px;
+    padding: 165px 50px 137px;
     letter-spacing: 0.6em;
 }
 
@@ -114,7 +115,7 @@ address {
 .aligned-text__nado {
     display: block;
     text-align: right;
-    position: RELATIVE;
+    position: relative;
     top: 10px;
     left: 29px;
 }
@@ -145,8 +146,7 @@ address {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom: 51PX;
+    bottom: 51px;
     left: 0;
     right: 0;
     width: 100%;
@@ -188,36 +188,38 @@ address {
 
 .lots {
     display: block;
-    Width: 1052px;
+    Width: 1100px;
     Height: 100%;
     margin-top: 130px;
 }
 
 .lots__heading {
     display: block;
-    position: absolute;
+    position: relative;
     width: 1052px;
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #000;
     margin-left: 63px;
-    margin-top: 47px;
+    padding-top: 48px;
     text-transform: uppercase;
 }
 
 .lots__card-list {
     display: flex;
     flex-direction: row;
+    gap: 25px;
     margin-left: 24px;
     Width: 1052px;
-    Height: 692px;
+    Height: 548px;
 }
 
 .card_type_film {
-    display: block;
-    position: absolute;
-    margin-top: 121px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 27px;
     background-image: url('../images/card-lot-01.jpg');
     background-size: cover;
     background-position: center;
@@ -228,10 +230,9 @@ address {
 }
 
 .card_type_book {
-    display: block;
-    position: absolute;
-    margin-top: 121px;
-    margin-left: 359px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
     background-image: url('../images/card-lot-02.jpg');
     background-size: cover;
     background-position: center;
@@ -242,10 +243,9 @@ address {
 }
 
 .card_type_picture {
-    display: block;
-    position: absolute;
-    margin-top: 121px;
-    margin-left: 718px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
     background-image: url('../images/card-lot-03.jpg');
     background-size: cover;
     background-position: center;
@@ -269,9 +269,17 @@ address {
     z-index: 1;
 }
 
+.layer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .card__text {
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 0%;
     font-family: raleway, sans-serif;
     font-weight: 400;
@@ -286,8 +294,8 @@ address {
 
 .overlay__card {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 334px;
+    height: 563px;
     background-color: #000;
     opacity: 60%;
     z-index: -1;
@@ -300,24 +308,24 @@ address {
     font-weight: 400;
     font-size: 20px;
     color: #000;
-    margin-left: 40px; 
-    margin-top: 714px;
+    margin-left: 64px; 
+    margin-top: 71px;
 }
 
 .about {
     display: flex;
     justify-content: row;
-    margin-top: 146px;
+    margin-top: 102px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 366px;
     height: 595px;
-    width: 1052px;
+    width: 100%;
 }
 
 .about__logo {
     display: block;
-    position: absolute;
+    position: relative;
     background-position: center;
     background-size: 148px;
     background-image: url('../images/logo-white.svg');
@@ -333,40 +341,42 @@ address {
 .disciption {
     display: block;
     position: relative;
-    margin-left: 359px;
 }
 
 .about__title {
     display: block;
-    position: absolute;
+    position: relative;
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #000;
     text-transform: uppercase;
-    width: 693px;
-    height: 100%;
+    width: 100%;
     margin-top: 183px;
-    padding-right: 40px;
+    margin-left: 71px;
 }
 
 .about__text {
     display: block;
-    position: absolute;
+    position: relative;
     font-family: raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #000;
-    width: 693px;
+    width: 761px;
     height: 100%;
-    margin-top: 330px;
+    margin-top: 100px;
     line-height: 18pt;
+    padding-left: 71px;
+}
+
+.otstup {
+    padding-top: 24px;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-    position: absolute;
     margin-top: 227px;
     margin-left: 50px;
     margin-right: 50px;
