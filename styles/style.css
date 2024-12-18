@@ -26,10 +26,10 @@
     font-size: 18px;
     font-weight: 400;
     color: #000;
-    padding-left: 30px;
+    padding-left: 31px;
 }
 
-.header__links-list-item {
+.header__link_active {
     display: inline;
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -37,7 +37,7 @@
     list-style: circle;
 }
 
-.header__link_active {
+.header__links-list-item {
     display: inline;
     text-decoration: none;
 }
@@ -59,6 +59,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
+    font-style: normal;
 }
 
 .header__address {
@@ -111,21 +112,20 @@ a {
     letter-spacing: 0.6em;
 }
 
-.aligned-text__ono {
+.aligned-text__left {
     display: block;
     text-align: left;
     letter-spacing: -0.4em;
 }
 
-.aligned-text__tebe {
+.aligned-text__center {
     display: block;
     text-align: center;
     position: relative;
-    top: 6px;
-    left: 13px;
+    top: 8px;
 }
 
-.aligned-text__nado {
+.aligned-text__right {
     display: block;
     text-align: right;
     position: relative;
@@ -133,25 +133,12 @@ a {
     left: 29px;
 }
 
-.letter-spacing-extended__o {
-    letter-spacing: 30px; 
-}
-
-.letter-spacing-extended__otebado {
+.letter-spacing-extended {
     letter-spacing: 30px;
 }
 
-.letter-spacing-extended__n {
-    margin-right: 29px;
-}
-
-.letter-spacing-extended__e {
-    position: relative; 
-    left: -23px;
-}
-
-.letter-spacing-extended__ee {
-    letter-spacing: 18px;
+.no-letter-spacing {
+    letter-spacing: 60px;
 }
 
 .cover__description {
@@ -166,7 +153,7 @@ a {
     padding: 0 51px 0 78px;
 }
 
-.cover__description-text {
+.cover__description {
     display: inline-flex;
     flex-direction: row;
     font-family: raleway, sans-serif;
@@ -194,9 +181,10 @@ a {
     font-size: 22px;
     color: #fff;
     text-transform: uppercase;
-    text-decoration: none
+    text-decoration: none;
     text-align: center;
     margin-left: auto;
+    word-spacing: 1px;
 }
 
 .lots {
@@ -223,7 +211,9 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 25px;
+    list-style-type: none;
     margin-left: 24px;
+    margin-top: 27px;
     Width: 1052px;
 }
 
@@ -231,12 +221,11 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 27px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     Width: 334px;
-    Height: 563px;
+    height: 100%;
     z-index: 0;
 }
 
@@ -269,7 +258,7 @@ a {
 .layer {
     display: flex;
     height: 100%;
-    width: 100%;
+    bottom: 0px;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -277,7 +266,6 @@ a {
 .card__text {
     display: block;
     position: relative;
-    bottom: 0%;
     font-family: raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -287,15 +275,6 @@ a {
     padding-left: 40px;
     padding-right: 40px;
     z-index: 1;
-}
-
-.overlay__card {
-    position: absolute;
-    width: 334px;
-    height: 563px;
-    background-color: #000;
-    opacity: 60%;
-    z-index: -1;
 }
 
 .lots__look-more-link {
@@ -313,7 +292,6 @@ a {
     margin-top: 102px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 366px;
     margin-top: 101px;
     width: 100%;
 }
@@ -346,14 +324,14 @@ a {
     font-size: 40px;
     color: #000;
     text-transform: uppercase;
-    width: 100%;
     margin-top: 183px;
     margin-left: 71px;
 }
 
 .about__text {
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     font-family: raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -365,14 +343,10 @@ a {
     padding-left: 71px;
 }
 
-.otstup {
-    padding-top: 24px;
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: -187px;
+    margin-top: 181px;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 88px;
@@ -390,22 +364,21 @@ a {
     text-align: center;
     font-size: 18px;
     padding-left: 35px;
-    padding-top: 3px;
-    word-spacing: 2pt;
-}
-
-.footer__link {
-    line-height: 13%;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    list-style-type: none;
-    margin-bottom: -4px;
+    margin-top: -2px;
 }
 
 .footer__link_active {
-    padding-top: 5px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.footer__link {
     text-decoration: none;
-    line-height: 8px;
+    padding-top: 5px;
+    line-height: 20px;
+    list-style-type: none;
 }
 
 .footer__social-list {
@@ -417,7 +390,8 @@ a {
     padding-bottom: 48px;
 }
 
-.ss {
+.social_networks {
+    display: block;
     background-position: center;
     background-repeat: no-repeat;
     Width: 48px;
@@ -425,16 +399,13 @@ a {
 }
 
 .yt {
-    display: block;
     background-image: url('../images/yt.svg');
 }
 
 .vk {
-    display: block;
     background-image: url('../images/vk.svg');
 }
 
 .pin {
-    display: block;
     background-image: url('../images/pinterest.svg');
 }
