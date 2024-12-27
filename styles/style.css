@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: #fff;
   font-family: raleway, sans-serif;
   font-weight: 400;
@@ -11,16 +12,9 @@
   z-index: 1;
 }
 
-.header_menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .header__links-list {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 33px;
   font-family: raleway, sans-serif;
   font-size: 18px;
@@ -29,21 +23,20 @@
   padding-left: 31px;
 }
 
-.header__links-list-item a {
-  text-decoration: none;
-}
-
-.header__links-list-item {
-  display: inline;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  display: list-item;
+.header__list-item {
   list-style: circle;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.header__links-list-item_active {
-  text-decoration: none;
-  list-style-type: none;
+.header__list-item_active {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__link {
+    text-decoration: none;
+    line-height: 20px;
 }
 
 .header__logo {
@@ -70,16 +63,11 @@
   display: block;
   text-align: left;
   margin-left: 187px;
-  margin-top: 4px;
   max-width: 237px;
 }
 
 .address__item {
-    width: 235px
-}
-
-a {
-  text-underline-offset: 4px;
+  width: 235px;
 }
 
 .cover {
@@ -155,22 +143,17 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  bottom: 51px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 0 51px 0 78px;
-}
-
-.cover__description {
-  display: inline-flex;
-  flex-direction: row;
   font-family: raleway, sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #fff;
   text-transform: uppercase;
   word-spacing: 19px;
+  bottom: 51px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 51px 0 78px;
 }
 
 .cover__description-text {
@@ -272,7 +255,6 @@ a {
   z-index: 1;
 }
 
-
 .card__text {
   display: block;
   position: relative;
@@ -295,6 +277,7 @@ a {
   color: #000;
   margin-left: 64px;
   margin-top: 30px;
+  text-underline-offset: 5px;
 }
 
 .about {
@@ -347,7 +330,6 @@ a {
   font-size: 20px;
   color: #000;
   max-width: 761px;
-  height: 100%;
   margin-top: 100px;
   line-height: 18pt;
   padding-left: 71px;
@@ -372,6 +354,9 @@ a {
   position: relative;
   text-align: center;
   font-size: 18px;
+  padding-top: 2px;
+  padding-left: 6px;
+  text-underline-offset: 3px;
 }
 
 .footer__list-item {
@@ -391,7 +376,8 @@ a {
 
 .footer__social-list {
   display: flex;
-  align-content: normal;
+  flex-direction: row;
+  list-style-type: none;
   position: relative;
   gap: 48px;
   align-items: center;
